@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+
 * {
     box-sizing:border-box;
 }
@@ -75,6 +77,39 @@ nav a.active {
     color: white;
     border-color: #8caba8;
 }
+
+.tempest-quote {
+    font-family: "Tangerine", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.8rem;
+    line-height: 1.2;
+    margin: 0.5rem 0 0.2rem;
+
+    opacity: 0.12;
+    transition: opacity 0.6s ease;
+    cursor: default;
+}
+
+.tempest-attribution {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 0.9rem;
+    font-style: italic;
+
+    opacity: 0.12;
+    transition: opacity 0.6s ease;
+    margin: 0;
+}
+
+.tempest-quote:hover,
+.tempest-quote:hover + .tempest-attribution {
+    opacity: 0.75;
+}
+
+
+
+
+
 
 /* Tablets */
 @media (max-width: 768px) {
