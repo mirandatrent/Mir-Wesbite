@@ -47,6 +47,35 @@ footer {
     width: 97%;
 }
 
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    padding: 18px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: #6f5a67;
+    border: 1px solid #a2798f;
+    padding: 8px 14px;
+    border-radius: 8px;
+    background-color: #ebdada;
+    font-weight: 600;
+}
+
+nav a:hover {
+    background-color: #d7c6cf;
+    color: #4f444a;
+}
+
+nav a.active {
+    background-color: #8caba8;
+    color: white;
+    border-color: #8caba8;
+}
+
 /* Tablets */
 @media (max-width: 768px) {
     body {
