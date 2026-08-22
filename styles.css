@@ -11,13 +11,14 @@ h1 {
 }
 
 h2 {
-    color: #8fa58c;
-    margin-top: 20px;
+    text-align: center;
+    color: #a2798f;
 }
 
 h3 {
-    text-align: center;
-    color: #a2798f;
+    color: #8fa58c;
+    margin-top: 20px;
+    text-align:center;
 }
 
 p {
@@ -39,6 +40,16 @@ footer {
     margin-top: 5px;
     border-top: 1px solid #a2798f;
     text-align: center;
+}
+
+footer a {
+    color: #a2798f;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #8caba8;
+    text-decoration: underline;
 }
 
 .content-box {
