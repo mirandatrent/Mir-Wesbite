@@ -47,6 +47,7 @@ footer a {
     text-decoration: none;
 }
 
+/* Styling for Shakespeare Quote Hidden */
 footer a:hover {
     color: #8caba8;
     text-decoration: underline;
@@ -95,19 +96,13 @@ nav a.active {
     align-items: center;
 }
 
-.dropdown {
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-
 .dropdown-content {
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
     z-index: 1000;
-    margin-top: 4px;
+    margin-top: 1px;
     gap: 2px;
     flex-direction: column;
 
