@@ -279,7 +279,162 @@ nav a.active {
     opacity: 0.75;
 }
 
+/* 404 Error Page */
 
+.error-page {
+    min-height: 100vh;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.error-container {
+    max-width: 650px;
+    margin: 40px;
+    padding: 50px;
+
+    text-align: center;
+
+    border: 1px solid #d8cce0;
+    border-radius: 20px;
+}
+
+.error-code {
+    font-size: 90px;
+    margin: 0;
+}
+
+.error-container h2 {
+    margin-top: 5px;
+}
+
+.error-container p {
+    line-height: 1.7;
+}
+
+.error-little-note {
+    font-style: italic;
+    opacity: 0.75;
+}
+
+.error-home-button {
+    display: inline-block;
+
+    margin-top: 20px;
+    padding: 10px 22px;
+
+    text-decoration: none;
+
+    border: 1px solid #b99ab0;
+    border-radius: 20px;
+}
+
+.error-home-button:hover {
+    transform: scale(1.05);
+}
+
+/* 404 vines */
+
+.vine-border {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+
+    width: 90px;
+    height: 100vh;
+
+    pointer-events: none;
+    z-index: 1;
+
+    opacity: 0.65;
+}
+
+.vine-left {
+    left: 0;
+}
+
+.vine-right {
+    right: 0;
+    transform: scaleX(-1);
+}
+
+.vine-border svg {
+    width: 100%;
+    height: 100%;
+}
+
+.vine-stem {
+    fill: none;
+    stroke: #81936f;
+    stroke-width: 5;
+    stroke-linecap: round;
+}
+
+.vine-leaf {
+    fill: #9aaa82;
+}
+
+/* Glitter cursor trail */
+
+.glitter-particle {
+    position: fixed;
+
+    background: #d9b7e8;
+
+    border-radius: 50%;
+
+    pointer-events: none;
+    z-index: 9999;
+
+    box-shadow:
+        0 0 4px #ffffff,
+        0 0 8px #d9b7e8,
+        0 0 12px #b99acb;
+
+    animation: glitter-fade 0.9s ease-out forwards;
+}
+
+@keyframes glitter-fade {
+    0% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(20px) scale(0);
+    }
+}
+
+/* Falling glitter */
+
+.falling-glitter {
+    position: fixed;
+    top: -20px;
+    pointer-events: none;
+    z-index: 3;
+
+    font-size: 16px;
+
+    animation: fall-glitter 6s linear forwards;
+}
+
+@keyframes fall-glitter {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
 
 
 /* Tablets */

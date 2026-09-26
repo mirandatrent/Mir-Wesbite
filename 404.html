@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>404 | Page Not Found</title>
+</head>
+
+<body class="error-page">
+
+    <div class="vine-border vine-left">
+    <svg viewBox="0 0 120 1000" preserveAspectRatio="none">
+        <path class="vine-stem"
+              d="M60 0
+                 C20 100, 100 180, 55 270
+                 C10 360, 100 440, 55 530
+                 C10 620, 100 700, 55 790
+                 C20 870, 95 930, 60 1000" />
+
+        <ellipse class="vine-leaf" cx="35" cy="120" rx="18" ry="9" transform="rotate(-30 35 120)" />
+        <ellipse class="vine-leaf" cx="82" cy="210" rx="18" ry="9" transform="rotate(30 82 210)" />
+        <ellipse class="vine-leaf" cx="30" cy="335" rx="18" ry="9" transform="rotate(-35 30 335)" />
+        <ellipse class="vine-leaf" cx="85" cy="455" rx="18" ry="9" transform="rotate(30 85 455)" />
+        <ellipse class="vine-leaf" cx="30" cy="585" rx="18" ry="9" transform="rotate(-30 30 585)" />
+        <ellipse class="vine-leaf" cx="85" cy="700" rx="18" ry="9" transform="rotate(35 85 700)" />
+        <ellipse class="vine-leaf" cx="32" cy="835" rx="18" ry="9" transform="rotate(-30 32 835)" />
+    </svg>
+</div>
+
+<div class="vine-border vine-right">
+    <svg viewBox="0 0 120 1000" preserveAspectRatio="none">
+        <path class="vine-stem"
+              d="M60 0
+                 C20 100, 100 180, 55 270
+                 C10 360, 100 440, 55 530
+                 C10 620, 100 700, 55 790
+                 C20 870, 95 930, 60 1000" />
+
+        <ellipse class="vine-leaf" cx="35" cy="120" rx="18" ry="9" transform="rotate(-30 35 120)" />
+        <ellipse class="vine-leaf" cx="82" cy="210" rx="18" ry="9" transform="rotate(30 82 210)" />
+        <ellipse class="vine-leaf" cx="30" cy="335" rx="18" ry="9" transform="rotate(-35 30 335)" />
+        <ellipse class="vine-leaf" cx="85" cy="455" rx="18" ry="9" transform="rotate(30 85 455)" />
+        <ellipse class="vine-leaf" cx="30" cy="585" rx="18" ry="9" transform="rotate(-30 30 585)" />
+        <ellipse class="vine-leaf" cx="85" cy="700" rx="18" ry="9" transform="rotate(35 85 700)" />
+        <ellipse class="vine-leaf" cx="32" cy="835" rx="18" ry="9" transform="rotate(-30 32 835)" />
+    </svg>
+</div>
+
+<script>
+document.addEventListener("mousemove", function(event) {
+
+    const glitter = document.createElement("span");
+
+    glitter.classList.add("glitter-particle");
+
+    glitter.style.left = event.clientX + "px";
+    glitter.style.top = event.clientY + "px";
+
+    const size = Math.random() * 6 + 3;
+
+    glitter.style.width = size + "px";
+    glitter.style.height = size + "px";
+
+    document.body.appendChild(glitter);
+
+    setTimeout(() => {
+        glitter.remove();
+    }, 900);
+function createFallingGlitter() {
+
+    const glitter = document.createElement("span");
+
+    glitter.classList.add("falling-glitter");
+
+    const colors = [
+        "#d4af37",   // gold
+        "#9b7fc7",   // purple
+        "#e7a6c7"    // pink
+    ];
+
+    const symbols = ["✦", "✧", "⋆"];
+
+    glitter.innerHTML =
+        symbols[Math.floor(Math.random() * symbols.length)];
+
+    glitter.style.color =
+        colors[Math.floor(Math.random() * colors.length)];
+
+    glitter.style.left =
+        Math.random() * 100 + "vw";
+
+    glitter.style.fontSize =
+        (10 + Math.random() * 12) + "px";
+
+    glitter.style.animationDuration =
+        (4 + Math.random() * 4) + "s";
+
+    document.body.appendChild(glitter);
+
+    setTimeout(() => {
+        glitter.remove();
+    }, 8000);
+}
+
+setInterval(createFallingGlitter, 180);
+});
+
+
+</script>
+
+    <main class="error-container">
+
+        <h1 class="error-code">404</h1>
+
+        <h2>Oops! You wandered off the path...</h2>
+
+        <p>
+            Sorry, this page can't be reached right now.
+            It may have moved, may not exist yet, or might simply
+            still be a work in progress.
+        </p>
+
+        <p class="error-little-note">
+            Mind the vines on your way back. ✨
+        </p>
+
+        <a href="index.html" class="error-home-button">
+            Return Home
+        </a>
+
+    </main>
+
+</body>
+
+</html>
