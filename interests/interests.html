@@ -46,10 +46,54 @@
 <h1>Recently I've Been Up To!</h1>
 <h2>Hi there! If you're on this page, it is really just about random activities I've done recently. Usually farmers markets, or day trips. I'll just be sharing little tid bits of my life here!</h2>
 
-<article class="post-card">
+<article class="post-card reverse">
+    <article class="post-card reverse">
 
     <div class="post-slideshow">
-        <img src="FarmersMarked82926.jpg" alt="Huckleberry roll and strawberry hibiscus drink at the Nampa Farmers Market">
+        <img src="2026-09-25-cascade/BigfootBrewCoffee92526.jpg" class="post-slide active" alt="Dirty chai tea latte from Bigfoot Brew Coffee">
+        <img src="2026-09-25-cascade/LakesideLunch92526.jpg" class="post-slide" alt="Fish, shrimp, mac and cheese, and tater tots from Lakefront Bar and Grill">
+        <img src="2026-09-25-cascade/DoubleRainbow92526.jpg" class="post-slide" alt="Double rainbow in Cascade">
+        <img src="2026-09-25-cascade/FullRainbow92526.jpg" class="post-slide" alt="Full rainbow arch in Cascade">
+
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+    </div>
+
+    <div class="post-content">
+        <h3>Cascade Day Trip</h3>
+        <p class="post-date">September 25, 2026</p>
+
+        <p>
+            Starting with a fun fact: September 25 is now considered National Dolly Day!
+        </p>
+
+        <p>
+            Today my dad and I took the day off work to visit my grandma. On the way, we stopped
+            so I could grab a dirty chai tea latte from one of my favorite coffee shops, Bigfoot
+            Brew Coffee. They’re always amazing no matter what I order, and the customer service
+            is consistently quick and friendly.
+        </p>
+
+        <p>
+            We spent some time at the house before heading to Lakefront Bar &amp; Grill at the golf
+            course for an early dinner. I started with clam chowder, then had fish and shrimp with
+            mac and cheese and tots on the side. Everything was delicious.
+        </p>
+
+        <p>
+            On the drive home, we ended up seeing rainbows everywhere. We spotted a double rainbow
+            and could even make out both ends, and later we saw a full rainbow that we managed to
+            photograph just before it faded. It was such a pretty way to end the day.
+        </p>
+    </div>
+
+</article>
+</article>
+
+<article class="post-card">
+
+    <div class="post-image">
+        <img src="2026-08-29-farmers-market/FarmersMarked82926.jpg" alt="Huckleberry roll and strawberry hibiscus drink at the Nampa Farmers Market">
     </div>
 
     <div class="post-content">
@@ -79,6 +123,70 @@
 
 </article>
 
+<article class="post-card">
+
+    <div class="post-content">
+        <h3>Koe Wetzel Concert</h3>
+        <p class="post-date">July 23, 2026</p>
+
+        <p>
+            After trying to see Koe Wetzel several times and somehow never having it work out,
+            I finally made it to one of his shows! He’s easily one of my favorite artists from
+            the current generation of country and rock, so I was ridiculously excited.
+        </p>
+
+        <p>
+            Bayker Blankenship opened the show, followed by Ole 60, and then finally Koe.
+            I ended up running into quite a few people while we were there, which made the
+            whole night even more fun.
+        </p>
+
+        <p>
+            At some point my feet were absolutely killing me, so I grabbed some amazing
+            BBQ pulled pork mac and cheese and somehow found a chair tucked into a tree to
+            sit and eat. Honestly, hiding in a tree with mac and cheese at a concert is
+            probably one of the most accurate representations of me possible.
+        </p>
+
+        <p>
+            The whole show was amazing, and finally getting to see Koe live was absolutely
+            worth the wait. I ended up getting sick afterward, which was unfortunate, but
+            I’d still say the night was beyond worth it.
+        </p>
+    </div>
+
+    <div class="post-slideshow">
+
+    <img src="2026-07-23-koe-wetzel/lilly-and-me72326.jpg"
+         class="post-slide active"
+         alt="Two blondes at the Koe Wetzel concert standing near concession booths. The left one in black boots, shorts, and a lavender top. The right in a denim romper.">
+
+    <img src="2026-07-23-koe-wetzel/bayker-blankenship72326.jpg"
+         class="post-slide"
+         alt="Bayker Blankenship performing">
+
+    <img src="2026-07-23-koe-wetzel/ole-6072326.jpg"
+         class="post-slide"
+         alt="Ole 60 performing">
+
+    <img src="2026-07-23-koe-wetzel/koe-wetzel72326.jpg"
+         class="post-slide"
+         alt="Koe Wetzel performing">
+
+    <img src="2026-07-23-koe-wetzel/mac-in-tree72326.jpg"
+         class="post-slide"
+         alt="Eating pulled pork mac and cheese while sitting in a tree">
+
+    <img src="2026-07-23-koe-wetzel/koe-wetzel72326.1.jpg"
+         class="post-slide"
+         alt="Koe Wetzel performing">
+
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+
+</div>
+
+</article>
 
 <footer>
     <p>&copy; 2026 Miranda Trent | <a href="https://www.linkedin.com/in/mirandaptrent">LinkedIn</a></p>
@@ -90,5 +198,43 @@
         — Prospero, <em>The Tempest</em>, William Shakespeare
     </p>
 </footer>
+<script>
+document.querySelectorAll(".post-slideshow").forEach(slideshow => {
 
+    const slides = slideshow.querySelectorAll(".post-slide");
+    const nextButton = slideshow.querySelector(".next");
+    const prevButton = slideshow.querySelector(".prev");
+
+    let currentSlide = 0;
+
+    function showSlide(index) {
+        slides.forEach(slide => {
+            slide.classList.remove("active");
+        });
+
+        slides[index].classList.add("active");
+    }
+
+    nextButton.addEventListener("click", () => {
+        currentSlide++;
+
+        if (currentSlide >= slides.length) {
+            currentSlide = 0;
+        }
+
+        showSlide(currentSlide);
+    });
+
+    prevButton.addEventListener("click", () => {
+        currentSlide--;
+
+        if (currentSlide < 0) {
+            currentSlide = slides.length - 1;
+        }
+
+        showSlide(currentSlide);
+    });
+
+});
+</script>
 </Body>
