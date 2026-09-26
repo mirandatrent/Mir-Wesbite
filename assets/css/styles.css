@@ -116,6 +116,48 @@ nav a.active {
     display: flex;
 }
 
+/* Post Cards */
+
+.post-card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+
+    border: 1px solid #d8cce0;
+    border-radius: 18px;
+}
+
+.post-slideshow {
+    width: 45%;
+}
+
+.post-slideshow img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+.post-content {
+    width: 55%;
+}
+
+.post-content h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.post-date {
+    font-style: italic;
+    opacity: 0.7;
+    margin-bottom: 20px;
+}
+
+
 .tempest-quote {
     font-family: "Tangerine", cursive;
     font-weight: 700;
@@ -143,8 +185,6 @@ nav a.active {
 .tempest-quote:hover + .tempest-attribution {
     opacity: 0.75;
 }
-
-
 
 
 
