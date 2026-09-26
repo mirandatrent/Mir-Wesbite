@@ -280,6 +280,27 @@ nav a.active {
     h2 {
         font-size: 1.6rem;
     }
+    .post-card,
+    .post-card.reverse {
+        flex-direction: column;
+    }
+
+    .post-slideshow,
+    .post-image,
+    .post-content {
+        width: 100%;
+    }
+
+    .post-slideshow,
+    .post-image {
+        margin-bottom: 20px;
+    }
+
+    .post-slideshow img,
+    .post-image img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 /* Phones */
@@ -313,5 +334,28 @@ nav a.active {
 
     footer {
         padding: 15px 10px;
+    }
+    .post-card,
+    .post-card.reverse {
+        flex-direction: column;
+    }
+
+    .post-slideshow,
+    .post-image,
+    .post-content {
+        width: 100%;
+    }
+
+    .post-slideshow,
+    .post-image {
+        margin-bottom: 20px;
+    }
+
+    .post-slideshow img,
+    .post-image img {
+        width: 100%;
+        height: auto;
+        max-height: none;
+        object-fit: cover;
     }
 }
