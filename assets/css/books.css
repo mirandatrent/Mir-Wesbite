@@ -778,6 +778,181 @@ html {
     scroll-behavior: smooth;
 }
 
+/* =========================================================
+   COMPLETED BOOKS
+   ========================================================= */
+
+
+/* ---------- Completed Page Layout ---------- */
+
+.completed-site {
+    width: min(1100px, 94%);
+    margin: 0 auto;
+    padding: 10px 0 60px;
+}
+
+
+/* ---------- Completed Section ---------- */
+
+.completed-section {
+    --section-accent: var(--book-plum);
+
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 45px;
+    padding: 38px 42px 42px;
+
+    background-color: var(--book-paper-light);
+
+    border: 1px solid var(--section-accent);
+    border-top: 6px solid var(--section-accent);
+
+    box-shadow:
+    0 8px 22px rgba(19, 16, 16, 0.28),
+    inset 0 0 0 5px rgba(255, 255, 255, 0.12),
+    inset 0 0 0 6px rgba(78, 34, 15, 0.18);
+}
+
+
+/* ---------- Section Heading ---------- */
+
+.completed-section-header {
+    text-align: center;
+    margin-bottom: 34px;
+}
+
+.completed-section-header h2 {
+    font-family: "Cinzel", serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+
+    color: var(--section-accent);
+
+    margin: 0 0 7px;
+}
+
+.completed-section-header p {
+    font-family: "Cormorant Upright", serif;
+    font-size: 1.05rem;
+    font-style: italic;
+
+    color: var(--book-wood);
+
+    margin: 0;
+}
+
+
+/* ---------- Two Column Archive ---------- */
+
+.completed-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 55px;
+    row-gap: 26px;
+}
+
+
+/* ---------- Individual Book Entry ---------- */
+
+.completed-entry {
+    position: relative;
+    padding: 0 0 22px;
+}
+
+.completed-entry::after {
+    content: "";
+    position: absolute;
+
+    left: 8%;
+    right: 8%;
+    bottom: 0;
+
+    height: 1px;
+
+    background-color: var(--section-accent);
+    opacity: 0.45;
+}
+
+
+/* Book Title */
+
+.completed-entry h3 {
+    font-family: "Cormorant Upright", serif;
+    font-size: 1.35rem;
+    font-weight: 600;
+    line-height: 1.2;
+
+    color: var(--book-wood);
+
+    margin: 0 0 4px;
+}
+
+
+/* Author */
+
+.completed-author {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.05rem;
+    font-style: italic;
+    font-weight: 500;
+
+    color: var(--section-accent);
+
+    margin: 0 0 7px;
+}
+
+
+/* Genres */
+
+.completed-genres {
+    font-family: "Cinzel", serif;
+    font-size: 0.72rem;
+    font-weight: 500;
+    line-height: 1.55;
+    letter-spacing: 0.07em;
+
+    color: var(--book-ink);
+
+    margin: 0;
+}
+
+/* ---------- Kindle Books ---------- */
+
+.completed-kindle {
+    --section-accent: #5D385B;
+    background-color: #9E809B;
+}
+
+/* ---------- Physical Books ---------- */
+
+.completed-physical {
+    --section-accent: #6B3F69;
+    background-color: #AD91AA;
+}
+
+/* ---------- Audio Books ---------- */
+
+.completed-audio {
+    --section-accent: #7D507B;
+    background-color: #C2A9C0;
+}
+
+.completed-series {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 0.78em;
+    font-weight: 500;
+    color: var(--section-accent);
+}
+
+/* ---------- DNF Books ---------- */
+
+.completed-dnf {
+    --section-accent: #8D5F8C;
+    background-color: #D8C8D8;
+}
+
+
 /* ---------- Book Blog: Responsive ---------- */
 
 @media (max-width: 850px) {
@@ -844,5 +1019,29 @@ html {
         display: none;
     }
 
+    .completed-site {
+        width: 92%;
+    }
 
+    .completed-section {
+        box-sizing: border-box;
+        padding: 30px 24px 32px;
+    }
+
+    .completed-section-header {
+        margin-bottom: 28px;
+    }
+
+    .completed-section-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .completed-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .completed-entry h3 {
+        font-size: 1.25rem;
+    }
 }
