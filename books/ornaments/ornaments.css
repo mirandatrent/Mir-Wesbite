@@ -1,0 +1,11 @@
+/* Clean isolated Victorian ornament assets */
+.ornament { display:block; height:auto; max-width:100%; pointer-events:none; user-select:none; }
+.ornamented-section { position:relative; isolation:isolate; overflow:hidden; }
+.ornament--corner { position:absolute; width:clamp(100px,18vw,280px); z-index:0; }
+.ornament--tl { top:0; left:0; }
+.ornament--tr { top:0; right:0; }
+.ornament--bl { bottom:0; left:0; }
+.ornament--br { bottom:0; right:0; }
+.ornament--center, .ornament--divider { margin-inline:auto; width:min(90%,850px); }
+.ornament--marginal { position:absolute; width:clamp(55px,8vw,115px); }
+@media (max-width:700px){ .ornament--marginal{display:none;} .ornament--corner{width:clamp(85px,27vw,160px);} }

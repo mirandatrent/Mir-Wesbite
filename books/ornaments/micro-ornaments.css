@@ -1,0 +1,13 @@
+/* Independent transparent Victorian micro ornaments */
+.micro-ornament {
+  display:inline-block;
+  width:var(--ornament-size,24px);
+  height:auto;
+  object-fit:contain;
+  pointer-events:none;
+  user-select:none;
+}
+.micro-ornament--xs{--ornament-size:14px}
+.micro-ornament--sm{--ornament-size:20px}
+.micro-ornament--md{--ornament-size:28px}
+.micro-ornament--lg{--ornament-size:36px}

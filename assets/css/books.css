@@ -121,12 +121,10 @@ body.books-page {
     margin: 0 auto 45px;
     padding: 45px 55px;
 
-    border: 1px solid var(--book-brass);
+    border: none;
 
     box-shadow:
-        0 8px 22px rgba(19, 16, 16, 0.28),
-        inset 0 0 0 5px var(--book-paper),
-        inset 0 0 0 6px rgba(84, 58, 20, 0.25);
+        0 8px 22px rgba(19, 16, 16, 0.28);
 }
 
 
@@ -217,6 +215,13 @@ body.books-page {
 
 .books-contents {
     text-align: center;
+
+    
+}
+
+.books-contents > * {
+    position: relative;
+    z-index: 2;
 }
 
 .books-contents h2 {
@@ -254,18 +259,16 @@ body.books-page {
 
 /* ---------- Victorian Contents Page ---------- */
 
-.books-contents {
-    text-align: center;
-}
-
 .contents-volume {
     font-family: "Cormorant Upright", serif;
     font-size: 1.05rem;
     letter-spacing: 0.08em;
 
-    color: var(--book-leather);
+    position: relative;
+    top: 60px;
+    z-index: 3;
 
-    margin-bottom: 8px;
+    color: var(--book-leather);
 }
 
 .books-contents h2 {
@@ -330,12 +333,286 @@ body.books-page {
     background: none;
 }
 
+/* ---------- Book Ornament Layouts---------- */
+
+/* ---------- Contents: Top Left Corner ---------- */
+
+.books-contents::before {
+    content: "";
+    position: absolute;
+
+    top: -7px;
+    left: -7px;
+
+    width: 180px;
+    height: 180px;
+
+    background-image: url("../../books/ornaments/corner-top-left.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top left;
+
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* ---------- Contents: Top Right Corner ---------- */
+
+.books-contents::after {
+    content: "";
+    position: absolute;
+
+    top: -7px;
+    right: -7px;
+
+    width: 180px;
+    height: 180px;
+
+    background-image: url("../../books/ornaments/corner-top-right.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top right;
+
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* ---------- Contents: Top Center ---------- */
+
+.ornament-top-center {
+    position: absolute !important;
+
+    top: -7px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 460px;
+    height: auto;
+
+    pointer-events: none;
+    user-select: none;
+    z-index: 1 !important;
+}
+
+.books-contents::before,
+.books-contents::after {
+    width: 215px;
+    height: 215px;
+}
+
+/* ---------- Contents: Bottom Corners ---------- */
+
+.ornament-bottom-corner {
+    position: absolute !important;
+    bottom: -7px;
+
+    width: 135px;
+    height: auto;
+
+    pointer-events: none;
+    user-select: none;
+    z-index: 1 !important;
+}
+
+.ornament-bottom-left {
+    left: -7px;
+}
+
+.ornament-bottom-right {
+    right: -7px;
+}
+
+.ornament-bottom-left,
+.ornament-bottom-right {
+    transform: scaleY(-1);
+}
 
 
+/* ---------- Contents: Bottom Center ---------- */
+
+.ornament-bottom-center {
+    position: absolute !important;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 250px;
+    height: auto;
+
+    pointer-events: none;
+    user-select: none;
+    z-index: 1 !important;
+}
+
+/* =========================================================
+   BOOK SECTION ORNAMENTS
+   Reusable decorations for individual parchment sections
+   ========================================================= */
+
+.ornament-section-top {
+    display: block;
+    width: 450px;
+    max-width: 75%;
+    height: auto;
+
+    margin: -45px auto 15px;
+
+    pointer-events: none;
+    user-select: none;
+}
+
+.ornament-section-bottom {
+    display: block;
+    width: 280px;
+    max-width: 55%;
+    height: auto;
+
+    margin: 30px auto -45px;
+
+    pointer-events: none;
+    user-select: none;
+}
+
+/* ---------- Finding My Way Back ---------- */
+
+.finding-my-way-back .ornament-section-top {
+    width: 360px;
+}
 
 
+/* ---------- The Reader I Am Now ---------- */
 
+.reader-i-am-now .ornament-section-top {
+    width: 430px;
+}
 
+/* ---------- What I Look For in a Book ---------- */
+
+.what-i-look-for .ornament-section-top {
+    width: 430px;
+}
+
+/* ---------- Books Became My Quiet Place ---------- */
+
+.quiet-place .ornament-section-top {
+    width: 430px;
+}
+
+/* ---------- Genres Intro ---------- */
+
+.genres-page > h4 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 1.5;
+
+    color: var(--book-leather);
+    text-align: center;
+
+    max-width: 600px;
+    margin: 15px auto 30px;
+}
+
+.genres-page > h2 {
+    font-family: "Cinzel", serif;
+    font-size: 1.7rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    color: var(--book-wood);
+    text-align: center;
+}
+
+/* ---------- Genres Page ---------- */
+
+.genres-page {
+    text-align: center;
+    position: relative;
+}
+
+.genres-page > p,
+.genres-page > h4 {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.genres-page h3 {
+    text-align: center;
+}
+/* ---------- Genres Ornamentation ---------- */
+
+.genres-top {
+    width: 500px;
+    max-width: 80%;
+}
+
+.genre-marginal {
+    position: absolute;
+    width: 85px;
+    height: auto;
+
+    pointer-events: none;
+    user-select: none;
+}
+
+.genre-marginal-left {
+    left: 8px;
+    top: 28%;
+}
+
+.genre-marginal-right {
+    right: 8px;
+    top: 62%;
+}
+
+.genre-marginal-upper-right {
+    right: 10px;
+    top: 17%;
+}
+
+.genre-marginal-lower-left {
+    left: 10px;
+    top: 76%;
+}
+
+/* ---------- Genres: Micro Ornaments ---------- */
+
+.genre-micro {
+    position: absolute;
+    height: auto;
+    pointer-events: none;
+    user-select: none;
+    z-index: 1;
+}
+
+/* Ribbon + jewel */
+.genre-bow {
+    width: 85px;
+    top: 47%;
+    right: 18px;
+}
+
+/* Brass/lavender diamond */
+.genre-diamond {
+    width: 42px;
+    top: 12%;
+    left: 22px;
+}
+
+/* Crescent moon — PERFECT, DON'T TOUCH HER */
+.genre-moon {
+    width: 70px;
+    top: 87%;
+    right: 18px;
+}
+
+/* Sage hanging jewel */
+.genre-sage-drop {
+    width: 55px;
+    top: 57%;
+    left: 22px;
+}
 
 
 
