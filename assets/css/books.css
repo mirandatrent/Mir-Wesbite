@@ -613,12 +613,166 @@ body.books-page {
     top: 57%;
     left: 22px;
 }
+/* =========================================================
+   BOOK BLOG
+   ========================================================= */
 
+.book-blog-page {
+    background-color: #261b22;
+}
 
+.warning-spoiler {
+    text-align:center;
+}
 
+/* =========================================================
+   BOOK BLOG
+   ========================================================= */
 
+.book-blog {
+    width: min(1100px, 94%);
+    margin: 0 auto;
+    padding: 15px 0 50px;
+}
 
+.review-card {
+    max-width: 900px;
+    margin: 0 auto 40px;
 
+    background-color: #E0E7E9;
+    border: 2px solid #A3C6C4;
+    border-radius: 10px;
+
+    box-shadow: 0 8px 22px rgba(19, 16, 16, 0.28);
+
+    overflow: hidden;
+}
+
+/*============THIS IS FOR THE CARDS IN BOOK BLOG================*/
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 300,
+        'GRAD' 0,
+        'opsz' 24;
+}
+
+.material-symbols-outlined.filled {
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 300,
+        'GRAD' 0,
+        'opsz' 24;
+}
+
+/* ========================================
+   BOOK BLOG - REVIEW CARDS
+======================================== */
+
+.book-blog {
+    width: min(1100px, 90%);
+    margin: 0 auto;
+}
+
+.review-card {
+    background-color: #354649;
+    border: 1px solid #C8A96B;
+        color: #F7F1DE;
+
+    border-radius: 12px;
+    padding: 35px;
+    margin: 50px 0;
+}
+
+.review-card-top {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.review-cover {
+    flex: 0 0 220px;
+}
+
+.review-cover img {
+    width: 220px;
+    height: 330px;
+    object-fit: contain;
+    display: block;
+}
+
+.review-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.review-header {
+    text-align: center;
+}
+
+.review-header h2 {
+    margin-top: 0;
+    color: #D6A1C4;
+
+}
+
+.review-extra-ratings {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 35px;
+}
+
+.review-thoughts {
+    margin-top: 30px;
+    padding-top: 25px;
+    border-top: 1px solid #C8A96B;
+}
+
+.review-author {
+    color: #F7F1DE;
+    margin-bottom: 4px;
+}
+
+.review-series {
+    color: #E0E7E9;
+    margin-top: 0;
+}
+
+.review-rating h3,
+.rating-item h3,
+.review-thoughts h3 {
+    color: #F7F1DE;
+}
+
+.review-thoughts p {
+    color: #F7F1DE;
+}
+
+.rating-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    width: 100%;
+}
+
+.review-rating,
+.rating-item {
+    width: 100%;
+    text-align: center;
+}
+
+.review-rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rating-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 /* ---------- Smooth Section Navigation ---------- */
 
