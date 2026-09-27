@@ -682,6 +682,12 @@ body.books-page {
     align-items: flex-start;
 }
 
+/* ---------- Reverse Every Other Review ---------- */
+
+    .review-card-reverse .review-card-top {
+        flex-direction: row-reverse;
+    }
+
 .review-cover {
     flex: 0 0 220px;
 }
@@ -782,6 +788,8 @@ html {
         align-items: center;
     }
 
+
+    
     .review-cover {
         flex: none;
     }

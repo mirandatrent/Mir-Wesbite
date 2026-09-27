@@ -1,0 +1,119 @@
+<!-- Recently Post Template - Photos Left -->
+
+<article class="post-card">
+
+    <div class="post-slideshow">
+
+        <img src="FOLDER-NAME/photo-1.jpg"
+             class="post-slide active"
+             alt="Describe photo here">
+
+        <img src="FOLDER-NAME/photo-2.jpg"
+             class="post-slide"
+             alt="Describe photo here">
+
+        <img src="FOLDER-NAME/photo-3.jpg"
+             class="post-slide"
+             alt="Describe photo here">
+
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+
+    </div>
+
+    <div class="post-content">
+
+        <h3>POST TITLE</h3>
+        <p class="post-date">Month Day, Year</p>
+
+        <p>
+            First paragraph goes here.
+        </p>
+
+        <p>
+            Second paragraph goes here.
+        </p>
+
+        <p>
+            Third paragraph goes here.
+        </p>
+
+    </div>
+
+</article>
+
+
+<!-- Recently Post Template - Photos Right -->
+
+<article class="post-card reverse">
+
+    <div class="post-slideshow">
+
+        <img src="FOLDER-NAME/photo-1.jpg"
+             class="post-slide active"
+             alt="Describe photo here">
+
+        <img src="FOLDER-NAME/photo-2.jpg"
+             class="post-slide"
+             alt="Describe photo here">
+
+        <img src="FOLDER-NAME/photo-3.jpg"
+             class="post-slide"
+             alt="Describe photo here">
+
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+
+    </div>
+
+    <div class="post-content">
+
+        <h3>POST TITLE</h3>
+        <p class="post-date">Month Day, Year</p>
+
+        <p>
+            First paragraph goes here.
+        </p>
+
+        <p>
+            Second paragraph goes here.
+        </p>
+
+        <p>
+            Third paragraph goes here.
+        </p>
+
+    </div>
+
+</article>
+
+<!-- Recently Post Template - Single Photo -->
+
+<article class="post-card">
+
+    <div class="post-image">
+
+        <img src="FOLDER-NAME/photo.jpg"
+             alt="Describe photo here">
+
+    </div>
+
+    <div class="post-content">
+
+        <h3>POST TITLE</h3>
+        <p class="post-date">Month Day, Year</p>
+
+        <p>
+            First paragraph goes here.
+        </p>
+
+        <p>
+            Second paragraph goes here.
+        </p>
+
+    </div>
+
+</article>
+
+<!--Single-phot right-side version--!>
+<article class="post-card reverse">

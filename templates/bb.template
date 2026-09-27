@@ -1,0 +1,221 @@
+<!-- =========================================================
+     BOOK REVIEW TEMPLATE — COVER LEFT
+     ========================================================= -->
+
+<article class="review-card">
+    <div class="review-card-top">
+
+        <div class="review-cover">
+            <!-- Cover image sourced from AUTHOR/OFFICIAL SOURCE -->
+            <a href=""
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Visit the official BOOK TITLE page">
+                <img
+                    src="covers/"
+                    alt="BOOK TITLE by AUTHOR book cover">
+            </a>
+        </div>
+
+        <div class="review-content">
+
+            <header class="review-header">
+                <h2>BOOK TITLE</h2>
+                <p class="review-author">AUTHOR</p>
+                <p class="review-series">SERIES NAME | Book #</p>
+            </header>
+
+            <!-- OVERALL RATING -->
+            <div class="review-rating">
+                <h3>Overall</h3>
+
+                <div class="rating-icons">
+                    <span class="material-symbols-outlined">star_rate</span>
+                    <span class="material-symbols-outlined">star_rate</span>
+                    <span class="material-symbols-outlined">star_rate</span>
+                    <span class="material-symbols-outlined">star_rate</span>
+                    <span class="material-symbols-outlined">star_rate</span>
+                </div>
+            </div>
+
+            <div class="review-extra-ratings">
+
+                <!-- LOVE -->
+                <div class="rating-item rating-love">
+                    <h3>Love</h3>
+
+                    <div class="rating-icons">
+                        <span class="material-symbols-outlined">favorite</span>
+                        <span class="material-symbols-outlined">favorite</span>
+                        <span class="material-symbols-outlined">favorite</span>
+                        <span class="material-symbols-outlined">favorite</span>
+                        <span class="material-symbols-outlined">favorite</span>
+                    </div>
+                </div>
+
+                <!-- TEARS -->
+                <div class="rating-item rating-tears">
+                    <h3>Tears</h3>
+
+                    <div class="rating-icons">
+                        <span class="material-symbols-outlined">humidity_high</span>
+                        <span class="material-symbols-outlined">humidity_high</span>
+                        <span class="material-symbols-outlined">humidity_high</span>
+                        <span class="material-symbols-outlined">humidity_high</span>
+                        <span class="material-symbols-outlined">humidity_high</span>
+                    </div>
+                </div>
+
+                <!-- SUSPENSE -->
+                <div class="rating-item rating-suspense">
+                    <h3>Suspense</h3>
+
+                    <div class="rating-icons">
+                        <span class="material-symbols-outlined">explosion</span>
+                        <span class="material-symbols-outlined">explosion</span>
+                        <span class="material-symbols-outlined">explosion</span>
+                        <span class="material-symbols-outlined">explosion</span>
+                        <span class="material-symbols-outlined">explosion</span>
+                    </div>
+                </div>
+
+                <!-- SPICE -->
+                <div class="rating-item rating-spice">
+                    <h3>Spice</h3>
+
+                    <div class="rating-icons">
+                        <span class="material-symbols-outlined">mode_heat</span>
+                        <span class="material-symbols-outlined">mode_heat</span>
+                        <span class="material-symbols-outlined">mode_heat</span>
+                        <span class="material-symbols-outlined">mode_heat</span>
+                        <span class="material-symbols-outlined">mode_heat</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- REVIEW -->
+            <div class="review-thoughts">
+                <h3>Review &amp; Thoughts</h3>
+
+                <p>
+                    REVIEW TEXT
+                </p>
+            </div>
+
+        </div>
+    </div>
+</article>
+
+
+
+
+
+<!-- =========================================================
+     BOOK REVIEW TEMPLATE — COVER RIGHT
+     ========================================================= -->
+
+<article class="review-card review-card-reverse">
+    <div class="review-card-top">
+
+        <div class="review-cover">
+            <!-- Cover image sourced from AUTHOR/OFFICIAL SOURCE -->
+            <a href=""
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Visit the official BOOK TITLE page">
+                <img
+                    src="covers/"
+                    alt="BOOK TITLE by AUTHOR book cover">
+            </a>
+        </div>
+
+        <div class="review-content">
+
+            <header class="review-header">
+                <h2>BOOK TITLE</h2>
+                <p class="review-author">AUTHOR</p>
+                <p class="review-series">SERIES NAME | Book #</p>
+            </header>
+
+            <!-- OVERALL RATING -->
+            <div class="review-rating">
+                <h3>Overall</h3>
+
+                <div class="rating-icons">
+                    <span class="material-symbols-outlined">star_rate</span>
+                    <span class="material-symbols-outlined">star_rate</span>
+                    <span class="material-symbols-outlined">star_rate</span>
+                    <span class="material-symbols-outlined">star_rate</span>
+                    <span class="material-symbols-outlined">star_rate</span>
+                </div>
+            </div>
+
+            <div class="review-extra-ratings">
+
+                <!-- LOVE -->
+                <div class="rating-item rating-love">
+                    <h3>Love</h3>
+
+                    <div class="rating-icons">
+                        <span class="material-symbols-outlined">favorite</span>
+                        <span class="material-symbols-outlined">favorite</span>
+                        <span class="material-symbols-outlined">favorite</span>
+                        <span class="material-symbols-outlined">favorite</span>
+                        <span class="material-symbols-outlined">favorite</span>
+                    </div>
+                </div>
+
+                <!-- TEARS -->
+                <div class="rating-item rating-tears">
+                    <h3>Tears</h3>
+
+                    <div class="rating-icons">
+                        <span class="material-symbols-outlined">humidity_high</span>
+                        <span class="material-symbols-outlined">humidity_high</span>
+                        <span class="material-symbols-outlined">humidity_high</span>
+                        <span class="material-symbols-outlined">humidity_high</span>
+                        <span class="material-symbols-outlined">humidity_high</span>
+                    </div>
+                </div>
+
+                <!-- SUSPENSE -->
+                <div class="rating-item rating-suspense">
+                    <h3>Suspense</h3>
+
+                    <div class="rating-icons">
+                        <span class="material-symbols-outlined">explosion</span>
+                        <span class="material-symbols-outlined">explosion</span>
+                        <span class="material-symbols-outlined">explosion</span>
+                        <span class="material-symbols-outlined">explosion</span>
+                        <span class="material-symbols-outlined">explosion</span>
+                    </div>
+                </div>
+
+                <!-- SPICE -->
+                <div class="rating-item rating-spice">
+                    <h3>Spice</h3>
+
+                    <div class="rating-icons">
+                        <span class="material-symbols-outlined">mode_heat</span>
+                        <span class="material-symbols-outlined">mode_heat</span>
+                        <span class="material-symbols-outlined">mode_heat</span>
+                        <span class="material-symbols-outlined">mode_heat</span>
+                        <span class="material-symbols-outlined">mode_heat</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- REVIEW -->
+            <div class="review-thoughts">
+                <h3>Review &amp; Thoughts</h3>
+
+                <p>
+                    REVIEW TEXT
+                </p>
+            </div>
+
+        </div>
+    </div>
+</article>
