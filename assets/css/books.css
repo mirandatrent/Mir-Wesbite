@@ -811,6 +811,8 @@ html {
     0 8px 22px rgba(19, 16, 16, 0.28),
     inset 0 0 0 5px rgba(255, 255, 255, 0.12),
     inset 0 0 0 6px rgba(78, 34, 15, 0.18);
+
+    scroll-margin-top: 30px;
 }
 
 
@@ -952,6 +954,41 @@ html {
     background-color: #D8C8D8;
 }
 
+
+/* ---------- Completed Internal Navigation ---------- */
+
+.completed-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px 14px;
+
+    margin: 20px auto 38px;
+
+    font-family: "Cinzel", serif;
+    font-size: 0.9rem;
+    letter-spacing: 0.06em;
+}
+
+.completed-nav a {
+    color: var(--book-lavender);
+    text-decoration: none;
+
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.completed-nav a:hover {
+    color: var(--book-gold);
+    transform: translateY(-1px);
+}
+
+.completed-nav span {
+    color: var(--book-brass);
+    font-size: 0.65rem;
+}
 
 /* ---------- Book Blog: Responsive ---------- */
 
