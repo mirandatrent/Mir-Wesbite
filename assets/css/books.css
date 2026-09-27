@@ -653,5 +653,19 @@ html {
         font-size: 1.05rem;
         line-height: 1.7;
     }
-}
 
+        /* Reading Story - mobile heading */
+    .reading-story h3 {
+        font-size: 1.15rem;
+        line-height: 1.45;
+    }
+
+    /* ---------- Genres: Mobile ---------- */
+
+    .genre-marginal,
+    .genre-micro {
+        display: none;
+    }
+
+
+}
