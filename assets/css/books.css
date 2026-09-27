@@ -637,14 +637,16 @@ body.books-page {
 
 .review-card {
     max-width: 900px;
-    margin: 0 auto 40px;
+    margin: 50px auto;
+    padding: 35px;
 
-    background-color: #E0E7E9;
-    border: 2px solid #A3C6C4;
-    border-radius: 10px;
+    background-color: #354649;
+    color: #F7F1DE;
+
+    border: 1px solid #C8A96B;
+    border-radius: 12px;
 
     box-shadow: 0 8px 22px rgba(19, 16, 16, 0.28);
-
     overflow: hidden;
 }
 
@@ -672,16 +674,6 @@ body.books-page {
 .book-blog {
     width: min(1100px, 90%);
     margin: 0 auto;
-}
-
-.review-card {
-    background-color: #354649;
-    border: 1px solid #C8A96B;
-        color: #F7F1DE;
-
-    border-radius: 12px;
-    padding: 35px;
-    margin: 50px 0;
 }
 
 .review-card-top {
@@ -778,6 +770,29 @@ body.books-page {
 
 html {
     scroll-behavior: smooth;
+}
+
+/* ---------- Book Blog: Responsive ---------- */
+
+@media (max-width: 850px) {
+
+    .review-card-top,
+    .review-card-reverse .review-card-top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .review-cover {
+        flex: none;
+    }
+
+    .review-content {
+        width: 100%;
+    }
+
+    .review-extra-ratings {
+        width: 100%;
+    }
 }
 
 
