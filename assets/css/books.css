@@ -954,6 +954,212 @@ html {
     background-color: #D8C8D8;
 }
 
+/* =========================================================
+   COMPLETED PAGE ORNAMENTS
+   ========================================================= */
+
+.completed-section {
+    position: relative;
+}
+
+.completed-ornament {
+    display: block;
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    pointer-events: none;
+    user-select: none;
+}
+
+.completed-ornament-top {
+    margin: -18px auto 22px;
+}
+
+.completed-ornament-bottom {
+    margin: 28px auto -18px;
+}
+
+.completed-charm {
+    position: absolute;
+    width: 32px;
+    height: auto;
+    object-fit: contain;
+    pointer-events: none;
+    user-select: none;
+    opacity: 0.9;
+}
+
+/* Kindle additional ornaments */
+
+.kindle-charm-03 {
+    right: 8px;
+    top: 18%;
+    width: 30px;
+}
+
+.kindle-charm-04 {
+    right: 8px;
+    left: auto;
+    top: 49%;
+    width: 30px;
+}
+
+.kindle-charm-05 {
+    right: 7px;
+    top: 72%;
+    width: 34px;
+}
+
+.kindle-charm-06 {
+    left: 7px;
+    top: 84%;
+    width: 32px;
+}
+
+.kindle-charm-07 {
+    right: 10px;
+    top: 91%;
+    width: 22px;
+}
+
+/* Kindle */
+.kindle-charm-left {
+    left: 6px;
+    top: 38%;
+}
+
+.kindle-charm-right {
+    left: 6px;
+    right: auto;
+    top: 58%;
+}
+
+/* =========================================================
+   PHYSICAL SECTION ORNAMENTS
+   ========================================================= */
+
+.physical-charm-01 {
+    right: 5px;
+    top: 13%;
+    width: 38px;
+}
+
+.physical-charm-02 {
+    left: 7px;
+    top: 23%;
+    width: 25px;
+}
+
+.physical-charm-03 {
+    right: 4px;
+    top: 33%;
+    width: 34px;
+}
+
+.physical-charm-04 {
+    left: 7px;
+    top: 43%;
+    width: 25px;
+}
+
+.physical-charm-05 {
+    right: 4px;
+    top: 53%;
+    width: 38px;
+}
+
+.physical-charm-06 {
+    left: 7px;
+    top: 63%;
+    width: 27px;
+}
+
+.physical-charm-07 {
+    right: 5px;
+    top: 72%;
+    width: 34px;
+}
+
+.physical-charm-08 {
+    left: 7px;
+    top: 81%;
+    width: 24px;
+}
+
+.physical-charm-09 {
+    right: 5px;
+    top: 89%;
+    width: 28px;
+}
+
+/* =========================================================
+   AUDIO SECTION ORNAMENTS
+   ========================================================= */
+
+.audio-charm-01 {
+    left: 5px;
+    top: 15%;
+    width: 38px;
+}
+
+.audio-charm-02 {
+    right: 7px;
+    top: 25%;
+    width: 23px;
+}
+
+.audio-charm-03 {
+    left: 5px;
+    top: 36%;
+    width: 34px;
+}
+
+.audio-charm-04 {
+    right: 7px;
+    top: 47%;
+    width: 24px;
+}
+
+.audio-charm-05 {
+    left: 5px;
+    top: 58%;
+    width: 38px;
+}
+
+.audio-charm-06 {
+    right: 7px;
+    top: 69%;
+    width: 23px;
+}
+
+.audio-charm-07 {
+    left: 5px;
+    top: 79%;
+    width: 32px;
+}
+
+.audio-charm-08 {
+    right: 7px;
+    top: 89%;
+    width: 22px;
+}
+
+/* =========================================================
+   DNF SECTION ORNAMENTS
+   ========================================================= */
+
+.dnf-charm-01 {
+    left: 8px;
+    top: 42%;
+    width: 34px;
+}
+
+.dnf-charm-02 {
+    right: 8px;
+    top: 62%;
+    width: 22px;
+}
 
 /* ---------- Completed Internal Navigation ---------- */
 
@@ -1081,4 +1287,24 @@ html {
     .completed-entry h3 {
         font-size: 1.25rem;
     }
+
+/*Charms for the completed page*/
+
+    .completed-ornament {
+        width: 250px;
+    }
+
+    .completed-charm {
+        width: 25px;
+    }
+
+    .kindle-charm-left {
+        left: 5px;
+    }
+
+    .kindle-charm-right {
+        right: 5px;
+    }
+
+
 }
