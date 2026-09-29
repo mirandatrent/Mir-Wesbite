@@ -1656,7 +1656,6 @@ body {
 .back-to-top:hover {
     background-color: var(--book-plum);
 }
-
 @media (max-width: 700px) {
     .back-to-top {
         right: 14px;
@@ -1665,6 +1664,53 @@ body {
         height: 42px;
     }
 }
+
+/* =========================================================
+   TBR BACKGROUND DECORATION
+   ========================================================= */
+
+.tbr-background-decor {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.tbr-background-left,
+.tbr-background-right {
+    position: absolute;
+    top: 50%;
+    width: 170px;
+    max-height: 70vh;
+    object-fit: contain;
+
+    opacity: 0.16;
+
+    transform: translateY(-50%);
+}
+
+.tbr-background-left {
+    left: 20px;
+}
+
+.tbr-background-right {
+    right: 20px;
+    transform: translateY(-50%) scaleX(-1);
+}
+
+.wishlist-page {
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 900px) {
+    .tbr-background-decor {
+        display: none;
+    }
+}
+
+
 
 /* ---------- Book Blog: Responsive ---------- */
 
