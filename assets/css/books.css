@@ -1161,6 +1161,371 @@ html {
     width: 22px;
 }
 
+/* =========================================================
+   WISHLIST & TBR PAGE
+   ========================================================= */
+
+.wishlist-page {
+    width: min(1100px, 94%);
+    margin: 0 auto;
+    padding: 10px 0 60px;
+}
+
+
+/* =========================================================
+   PAGE INTRO
+   ========================================================= */
+
+.wishlist-header {
+    width: min(820px, 100%);
+    margin: 0 auto 38px;
+    text-align: center;
+}
+
+.wishlist-header h1 {
+    font-family: "Tangerine", cursive;
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--book-gold);
+    margin: 15px 0 8px;
+}
+
+.wishlist-header p {
+    max-width: 650px;
+    margin: 0 auto;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.15rem;
+    line-height: 1.6;
+    color: var(--book-paper-light);
+}
+
+
+/* =========================================================
+   SHARED SECTION STYLE
+   ========================================================= */
+
+.wishlist-section,
+.tbr-section {
+    position: relative;
+    box-sizing: border-box;
+
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 45px;
+    padding: 38px 42px 42px;
+
+    background-color: #AD91AA;
+
+    border: 1px solid var(--book-plum);
+    border-top: 6px solid var(--book-plum);
+
+    box-shadow:
+        0 8px 22px rgba(19, 16, 16, 0.28),
+        inset 0 0 0 5px rgba(255, 255, 255, 0.12),
+        inset 0 0 0 6px rgba(78, 34, 15, 0.18);
+}
+
+
+/* =========================================================
+   SECTION HEADERS
+   ========================================================= */
+
+.wishlist-section-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.wishlist-section-header h2 {
+    font-family: "Cinzel", serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+
+    color: var(--book-plum);
+
+    margin: 0 0 7px;
+}
+
+.wishlist-section-header p {
+    font-family: "Cormorant Upright", serif;
+    font-size: 1.05rem;
+    font-style: italic;
+
+    color: var(--book-wood);
+
+    margin: 0;
+}
+
+
+/* =========================================================
+   AMAZON WISHLIST LINKS
+   ========================================================= */
+
+.wishlist-links {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+
+    gap: 14px;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.wishlist-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 150px;
+    padding: 12px 18px;
+
+    background-color: rgba(255, 240, 220, 0.72);
+
+    border: 1px solid var(--book-brass);
+    border-radius: 4px;
+
+    box-shadow:
+        0 3px 8px rgba(19, 16, 16, 0.18),
+        inset 0 0 0 2px rgba(255, 255, 255, 0.16);
+
+    font-family: "Cinzel", serif;
+    font-size: 0.82rem;
+    letter-spacing: 0.05em;
+
+    color: var(--book-wood);
+    text-align: center;
+    text-decoration: none;
+
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.wishlist-link:hover {
+    transform: translateY(-2px);
+
+    background-color: var(--book-paper);
+
+    border-color: var(--book-gold);
+}
+
+
+/* =========================================================
+   TO BE READ
+   ========================================================= */
+
+
+/* Wishlist / TBR page background */
+body {
+    background-color: #2b1d24;
+}
+
+.tbr-section {
+    background-color: #C2A9C0;
+}
+
+.tbr-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    column-gap: 55px;
+    row-gap: 0;
+}
+
+
+/* Individual TBR record */
+
+.tbr-entry {
+    position: relative;
+    padding: 14px 8px 15px;
+}
+
+.tbr-entry::after {
+    content: "";
+    position: absolute;
+
+    left: 6%;
+    right: 6%;
+    bottom: 0;
+
+    height: 1px;
+
+    background-color: var(--book-plum);
+    opacity: 0.35;
+}
+
+.tbr-entry h3 {
+    font-family: "Cormorant Upright", serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.25;
+
+    color: var(--book-wood);
+
+    margin: 0 0 3px;
+}
+
+.tbr-entry p {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1rem;
+    font-style: italic;
+
+    color: var(--book-plum);
+
+    margin: 0;
+}
+
+
+/* =========================================================
+   TBR CATEGORY HEADINGS
+   ========================================================= */
+
+.tbr-category {
+    grid-column: 1 / -1;
+
+    margin: 30px 0 12px;
+    padding-bottom: 7px;
+
+    border-bottom: 1px solid rgba(107, 63, 105, 0.55);
+
+    font-family: "Cinzel", serif;
+    font-size: 1.15rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+
+    color: var(--book-plum);
+}
+
+.tbr-category:first-child {
+    margin-top: 0;
+}
+
+
+.tbr-western {
+    --tbr-accent: #4F654F;
+    background-color: #93A58E;
+}
+
+.tbr-fantasy {
+    --tbr-accent: #58705A;
+    background-color: #A0B09A;
+}
+
+.tbr-dark-romance {
+    --tbr-accent: #607760;
+    background-color: #AAB8A3;
+}
+
+.tbr-mystery {
+    --tbr-accent: #687F67;
+    background-color: #B4C0AD;
+}
+
+.tbr-romance {
+    --tbr-accent: #70866F;
+    background-color: #BEC8B7;
+}
+
+.tbr-literary {
+    --tbr-accent: #778D76;
+    background-color: #C7D0C1;
+}
+
+.tbr-scifi {
+    --tbr-accent: #7E947D;
+    background-color: #D0D8CA;
+}
+
+.tbr-poetry {
+    --tbr-accent: #859B84;
+    background-color: #D9E0D3;
+}
+
+.tbr-classics {
+    --tbr-accent: #8CA18B;
+    background-color: #E1E6DC;
+}
+
+.tbr-section {
+    position: relative;
+    box-sizing: border-box;
+
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 45px;
+    padding: 38px 42px 42px;
+
+    border: 1px solid var(--tbr-accent);
+    border-top: 6px solid var(--tbr-accent);
+
+    box-shadow:
+        0 8px 22px rgba(19, 16, 16, 0.28),
+        inset 0 0 0 5px rgba(255, 255, 255, 0.12),
+        inset 0 0 0 6px rgba(78, 34, 15, 0.18);
+}
+
+.tbr-section-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.tbr-section-header h2 {
+    font-family: "Cinzel", serif;
+    font-size: 1.65rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    color: var(--tbr-accent);
+    margin: 0;
+}
+
+.tbr-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 55px;
+    row-gap: 0;
+}
+
+.tbr-entry {
+    position: relative;
+    padding: 15px 8px 16px;
+}
+
+.tbr-entry::after {
+    content: "";
+    position: absolute;
+    left: 6%;
+    right: 6%;
+    bottom: 0;
+    height: 1px;
+    background-color: var(--tbr-accent);
+    opacity: 0.4;
+}
+
+.tbr-entry h3 {
+    font-family: "Cormorant Upright", serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.3;
+    color: var(--book-wood);
+    margin: 0;
+}
+
+.tbr-author {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 0.9em;
+    font-weight: 500;
+    font-style: italic;
+    color: var(--tbr-accent);
+}
+
+
+
+
+
+
 /* ---------- Completed Internal Navigation ---------- */
 
 .completed-nav {
@@ -1304,6 +1669,62 @@ html {
 
     .kindle-charm-right {
         right: 5px;
+    }
+
+    .wishlist-page {
+        width: 92%;
+    }
+
+    .wishlist-header h1 {
+        font-size: 3.2rem;
+    }
+
+    .wishlist-section,
+    .tbr-section {
+        padding: 30px 24px 32px;
+    }
+
+    .wishlist-section-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .wishlist-links {
+        gap: 10px;
+    }
+
+    .wishlist-link {
+        min-width: 120px;
+        padding: 11px 14px;
+        font-size: 0.75rem;
+    }
+
+    .tbr-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tbr-category {
+        grid-column: 1;
+        margin-top: 28px;
+    }
+
+    .tbr-entry {
+        padding: 13px 5px 14px;
+    }
+
+    .tbr-entry h3 {
+        font-size: 1.15rem;
+    }
+
+    .tbr-section {
+        padding: 30px 24px 32px;
+    }
+
+    .tbr-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tbr-section-header h2 {
+        font-size: 1.4rem;
     }
 
 
