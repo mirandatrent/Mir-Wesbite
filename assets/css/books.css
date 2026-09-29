@@ -1607,6 +1607,65 @@ body {
     font-size: 0.65rem;
 }
 
+.wishlist-section {
+    scroll-margin-top: 30px;
+}
+
+
+.back-to-top {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    z-index: 1000;
+
+    width: 46px;
+    height: 46px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--book-wood);
+    border: 1px solid var(--book-brass);
+    border-radius: 50%;
+
+    color: var(--book-paper-light);
+    font-size: 1.4rem;
+
+    cursor: pointer;
+
+    box-shadow: 0 4px 12px rgba(19, 16, 16, 0.35);
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+
+    transition:
+        opacity 0.25s ease,
+        visibility 0.25s ease,
+        transform 0.25s ease,
+        background-color 0.2s ease;
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.back-to-top:hover {
+    background-color: var(--book-plum);
+}
+
+@media (max-width: 700px) {
+    .back-to-top {
+        right: 14px;
+        bottom: 14px;
+        width: 42px;
+        height: 42px;
+    }
+}
+
 /* ---------- Book Blog: Responsive ---------- */
 
 @media (max-width: 850px) {
