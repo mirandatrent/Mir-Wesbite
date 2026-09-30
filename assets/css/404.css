@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    font-family: "Cormorant Garamond", serif;
+
+    background-color: #eee7da;
+    color: #59665a;
+}
+
+
+/* 404 Content */
+
+.error-container {
+    position: relative;
+    z-index: 5;
+
+    width: min(650px, 80%);
+    padding: 50px;
+
+    text-align: center;
+
+    border: 1px solid #a2798f;
+    border-radius: 20px;
+
+    background-color: rgba(238, 231, 218, 0.92);
+}
+
+.error-container h1 {
+    margin: 0;
+
+    font-size: 90px;
+    color: #8e7fa8;
+}
+
+.error-container h2 {
+    margin: 5px 0 20px;
+
+    color: #a2798f;
+}
+
+.error-container p {
+    line-height: 1.7;
+}
+
+.error-note {
+    font-style: italic;
+    opacity: 0.75;
+}
+
+
+/* Return Home */
+
+.home-button {
+    display: inline-block;
+
+    margin-top: 20px;
+    padding: 10px 22px;
+
+    color: #6f5a67;
+    text-decoration: none;
+
+    border: 1px solid #a2798f;
+    border-radius: 20px;
+
+    background-color: #ebdada;
+
+    transition: background-color 0.2s ease;
+}
+
+.home-button:hover {
+    background-color: #d7c6cf;
+}
+
+
+/* Static Vines */
+
+.vine-border {
+    position: fixed;
+
+    top: 0;
+    bottom: 0;
+
+    width: 90px;
+    height: 100vh;
+
+    pointer-events: none;
+
+    z-index: 2;
+    opacity: 0.7;
+}
+
+.vine-left {
+    left: 0;
+}
+
+.vine-right {
+    right: 0;
+    transform: scaleX(-1);
+}
+
+.vine-border svg {
+    width: 100%;
+    height: 100%;
+}
+
+.vine-stem {
+    fill: none;
+    stroke: #81936f;
+    stroke-width: 5;
+    stroke-linecap: round;
+}
+
+.vine-leaf {
+    fill: #9aaa82;
+}
+
+
+/* Falling Glitter */
+
+.falling-glitter {
+    position: fixed;
+    top: -30px;
+
+    pointer-events: none;
+
+    z-index: 3;
+
+    animation-name: glitter-fall;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes glitter-fall {
+    from {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .vine-border {
+        width: 55px;
+        opacity: 0.5;
+    }
+
+    .error-container {
+        width: 78%;
+        padding: 30px 20px;
+    }
+
+    .error-container h1 {
+        font-size: 65px;
+    }
+}
