@@ -121,6 +121,24 @@ nav a.active {
     display: flex;
 }
 
+/* Non-clickable dropdown labels */
+
+.nav-label {
+    text-decoration: none;
+    color: #6f5a67;
+    border: 1px solid #a2798f;
+    padding: 8px 14px;
+    border-radius: 8px;
+    background-color: #ebdada;
+    font-weight: 600;
+    cursor: default;
+}
+
+.nav-label:hover {
+    background-color: #d7c6cf;
+    color: #4f444a;
+}
+
 /* Post Cards */
 
 .post-card {
