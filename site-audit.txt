@@ -1,0 +1,87 @@
+MIRANDATRENT.COM — SITE AUDIT LOG
+
+========================================
+CURRENT SITE STRUCTURE
+========================================
+
+HOME
+URL: /
+File: /index.html
+Purpose: Main landing page
+
+ABOUT ME
+URL: /me/about.html
+File: /me/about.html
+Purpose: Personal about page
+
+DAYS & DETOURS
+URL: /interests/interests.html
+File: /interests/interests.html
+Purpose: Personal blog / life updates
+
+BOOKS
+URL: /books/books.html
+File: /books/books.html
+Purpose: Main reading page
+
+BOOK BLOG
+URL: /books/bookblog.html
+File: /books/bookblog.html
+Purpose: Reviews and reading thoughts
+
+
+========================================
+CHANGE HISTORY
+========================================
+
+2026-09-29
+NAVIGATION
+- Updated primary navigation to:
+  Home | About | Books | Travel | More
+- Converted dropdown headings to non-link navigation labels.
+- Moved Days & Detours under About.
+- Moved Goals under About.
+- Moved Projects under More.
+
+FILE STRUCTURE
+- Renamed /about/ directory to /me/.
+- Goals now located at /me/goals.html.
+- Continued organizing CSS and JavaScript under /assets/.
+
+404 PAGE
+- Rebuilt custom 404 page.
+- 404.html remains at site root.
+- 404-specific CSS located at /assets/css/404.css.
+- 404-specific JavaScript located at /assets/js/404.js.
+- Added static botanical vines.
+- Added falling purple, pink, and gold glitter.
+- Fixed production asset paths.
+- Fixed Return Home navigation.
+
+BOOKS
+- Updated Books navigation to match global site navigation.
+- Fixed duplicate nested <nav> element on Book Blog that caused
+  two Home buttons and incorrect heading alignment.
+
+
+========================================
+PLANNED MIGRATIONS
+========================================
+
+CLEAN URL CONVERSION
+
+/books/books.html
+→ /books/index.html
+→ Public URL: /books/
+
+/books/completed.html
+→ /books/completed/index.html
+→ Public URL: /books/completed/
+
+/books/bookblog.html
+→ /books/blog/index.html
+→ Public URL: /books/blog/
+
+/books/wishlist.html
+→ /books/wishlist/index.html
+→ Public URL: /books/wishlist/
